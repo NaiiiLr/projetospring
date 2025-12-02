@@ -1,0 +1,83 @@
+Médicos
+
+{
+  "nome": "Roberto Almeida",
+  "cpf": "390.219.040-04",
+  "email": "roberto.almeida@clinic.com",
+  "senha": "1231231",
+  "crm": "CRM/SP 12345",
+  "valorConsulta": 450.00
+}
+
+{
+  "nome": "Ana Pereira",
+  "cpf": "559.388.820-52",
+  "email": "ana.pereira@clinic.com",
+  "senha": "121313",
+  "crm": "CRM/RJ 98765",
+  "valorConsulta": 300.00
+}
+
+Pacientes
+
+{
+  "nome": "Carlos Mendes",
+  "cpf": "643.807.210-94",
+  "email": "carlos.mendes@gmail.com",
+  "senha": "12131313",
+  "numCarteirinhaConvenio": "BRADESCO-554433",
+  "historicoAlergias": "Nenhuma alergia conhecida."
+}
+
+{
+  "nome": "Fernanda Costa",
+  "cpf": "470.735.310-02",
+  "email": "fernanda.costa@email.com",
+  "senha": "12313131313",
+  "numCarteirinhaConvenio": "PARTICULAR",
+  "historicoAlergias": "Alergia a Dipirona e Ibuprofeno."
+}
+
+Consultas
+
+{
+  "titulo": "Check-up Cardiológico",
+  "observacoes": "Paciente relata cansaço excessivo ao subir escadas.",
+  "prioridade": 1,
+  "status": 0,
+  "medico": 1,
+  "paciente": 1
+}
+
+{
+  "titulo": "Reação Alérgica Grave",
+  "observacoes": "Manchas vermelhas no rosto e dificuldade leve para respirar.",
+  "prioridade": 2,
+  "status": 0,
+  "medico": 2,
+  "paciente": 2
+}
+
+Receitas
+
+{
+  "descricaoMedicamentos": "1. Losartana 50mg - Tomar 1 cp a cada 12h.\n2. Caminhada leve diária.",
+  "consulta": 1
+}
+
+Finalizar atendimento 1
+
+{
+  "titulo": "Check-up Cardiológico",
+  "observacoes": "Paciente medicado e estabilizado. Retorno em 30 dias.",
+  "prioridade": 1,
+  "status": 2,
+  "medico": 1,
+  "paciente": 1
+}
+
+DELETE /medicos/1  ( médico com consultas )
+
+DELETE /consultas/2 ( consulta sem finalizar )
+
+DELETE /consultas/1 ( consulta finalizada )
